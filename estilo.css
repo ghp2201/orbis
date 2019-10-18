@@ -2,6 +2,7 @@ body{
     background-image: url("/orbis/imagens/papeldeparede.jpg");
     background-size: cover;
 }
+
 /*
 * Estilos relacionados a menus
 */
@@ -32,6 +33,7 @@ body{
     width: 48px;
     height: 48px;
 }
+
 /*
 * Estilos relacionados ao corpo
 */
@@ -65,10 +67,8 @@ body{
 }
 .botoesCorpo{
     position: relative;
-    left: 35%;
-    right: 35%;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
     margin-left: 20px;
     margin-right: 20px;    
 }
@@ -86,6 +86,10 @@ body{
     width: 24px;
     height: 24px;
 }
+
+/*
+* Estilos relacionados as postagens da linha do tempo
+*/
 .postagem{
     width: auto;
     height: auto;
@@ -100,6 +104,7 @@ body{
     border-radius: 15px;
     box-shadow: 1px 1px 1px 0.01px #d3d3d3;
 }
+
 /*
 * Estilos relacionados aos dados dos usuarios
 */

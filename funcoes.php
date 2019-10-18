@@ -16,10 +16,10 @@
                     $fotosPostagem
                 </div>
                 <div class = \"botoesCorpo\">
-                    <table>
+                   <table>
                         <tr>
-                            <td><a href = \"curtir.php\" class = \"fonteBotoesCorpo\"c><img src = \"icones/gostei2.png\" class = \"iconeBotoesCorpo\">Gostei</a></td>
-                            <td><a href=\"compartilhar.php\" class = \"fonteBotoesCorpo\"><img src = \"icones/compartilhar2.png\" class = \"iconeBotoesCorpo\">Compartilhar</a></td>
+                            <td><a href = \"curtir.php\" class = \"fonteBotoesCorpo\"c><img src = \"icones/gostei2.png\" class = \"iconeBotoesCorpo\"> Gostei</a></td>
+                            <td><a href=\"compartilhar.php\" class = \"fonteBotoesCorpo\"><img src = \"icones/compartilhar2.png\" class = \"iconeBotoesCorpo\"> Compartilhar</a></td>
                         </tr>
                     </table>
                 </div>
