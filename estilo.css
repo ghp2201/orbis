@@ -1,0 +1,131 @@
+body{
+    background-image: url("/orbis/imagens/papeldeparede.jpg");
+    background-size: cover;
+}
+/*
+* Estilos relacionados a menus
+*/
+.menuPerfil{
+    position: fixed;
+    height: 85px;
+    width: 85px;
+    right: 1.75%;
+    top: 10px;
+    background-color: #ffffff;
+    border-radius: 90px;
+    box-shadow: 2px 2px 2px 0.01px #d3d3d3;
+}
+.menu{
+    position: fixed;
+    height: auto;
+    width: 75px;
+    right: 2%;
+    top: 105px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px 0.01px #d3d3d3;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.botoesMenu{
+    width: 48px;
+    height: 48px;
+}
+/*
+* Estilos relacionados ao corpo
+*/
+.corpo{
+    position: absolute;
+    right: 10%;
+    left: 10%;
+    top: 10px;
+    bottom: 15px;
+    width: auto;
+    height: auto;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px 0.01px #d3d3d3;
+}
+.fonteCorpo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-weight: normal;
+    color: #000000;
+    text-decoration-line: none;
+    text-decoration: none;
+    text-align: left;
+    margin-top: 35px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.fotoCorpo{
+
+}
+.botoesCorpo{
+    position: relative;
+    left: 35%;
+    right: 35%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;    
+}
+.fonteBotoesCorpo{
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #adadad;
+    text-decoration-line: none;
+    text-decoration: none;
+    text-align: left;
+}
+.iconeBotoesCorpo{
+    width: 24px;
+    height: 24px;
+}
+.postagem{
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 1%;
+    right: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0.5px solid #d3d3d3;
+    border-radius: 15px;
+    box-shadow: 1px 1px 1px 0.01px #d3d3d3;
+}
+/*
+* Estilos relacionados aos dados dos usuarios
+*/
+.nomeUsuario{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-weight: bold;
+    color: #000000;
+    text-decoration-line: none;
+    text-decoration: none;
+    text-align: left;
+    text-shadow: 1px 1px 1px 0.01px #d3d3d3;
+    margin-top: 30px;
+    margin-bottom: auto;
+    margin-left: 100px;
+    margin-right: 10px;
+}
+.fotoUsuario{
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    margin-top: 15px;
+    margin-bottom: auto;
+    margin-left: 15px;
+    margin-right: auto;
+    border-radius: 90px;
+    box-shadow: 1px 1px 1px 0.01px #d3d3d3;
+    text-align: center;
+}
