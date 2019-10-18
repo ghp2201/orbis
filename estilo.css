@@ -1,3 +1,6 @@
+/*
+* Estilos gerais
+*/
 body{
     background-image: url("/orbis/imagens/papeldeparede.jpg");
     background-size: cover;
@@ -32,6 +35,14 @@ body{
 .botoesMenu{
     width: 48px;
     height: 48px;
+}
+.fotoPerfilMenu{
+    margin-top: 18px;
+    margin-bottom: auto;
+    margin-left: 18px;;
+    margin-right: auto;
+    vertical-align: middle;
+    text-align: center;
 }
 
 /*
@@ -106,7 +117,7 @@ body{
 }
 
 /*
-* Estilos relacionados aos dados dos usuarios
+* Estilos relacionados aos dados exibidos dos usuarios
 */
 .nomeUsuario{
     font-family: Arial, Helvetica, sans-serif;

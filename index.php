@@ -12,11 +12,11 @@
     </head>
     <body>
         <div class = "menuPerfil">
-            <a href = "meuPerfil.php"><img src = "icones/perfil2.png"></a>
+            <a href = "meuPerfil.php"><img src = "icones/perfil2.png" class = "fotoPerfilMenu"></a>
         </div>
         <div class = "menu">
             <a href = "index.php" class = "botoesMenu"><img src = "icones/home.png"/></a></td>
-            <a href s= "pesquisar.php" class = "botoesMenu"><img src = "icones/pesquisar2.png"/></a>
+            <a href = "pesquisar.php" class = "botoesMenu"><img src = "icones/pesquisar2.png"/></a>
             <a href = "mensagens.php" class = "botoesMenu"><img src = "icones/mensagem2.png"/></a>
             <a href = "mural.php" class = "botoesMenu"><img src = "icones/mural2.png"></a>
         </div>
