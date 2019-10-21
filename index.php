@@ -10,7 +10,7 @@
 		<link type = "text/css" rel = "stylesheet" href = "estilo.css">
         <title>Orbis</title>
     </head>
-    <body clas>
+    <body>
         <div class = "menuPerfil">
             <a href = "meuPerfil.php"><img src = "icones/perfil2.png" class = "fotoPerfilMenu"></a>
         </div>
@@ -20,7 +20,7 @@
             <a href = "mensagens.php" class = "botoesMenu"><img src = "icones/mensagem2.png"/></a>
             <a href = "mural.php" class = "botoesMenu"><img src = "icones/mural2.png"></a>
         </div>
-        <div class = "corpo">
+        <div class = "posicaoIframe">
             <iframe src = "linhadotempo.php"></iframe>
         </div>
     </body>

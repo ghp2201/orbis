@@ -13,7 +13,13 @@ iframe{
     box-shadow: 2px 2px 2px 0.01px #d3d3d3;
     background-color: #ffffff;
 }
-
+.posicaoIframe{
+    position: absolute;
+    right: 10%;
+    left: 10%;
+    top: 10px;
+    bottom: 15px;
+}
 /*
 * Estilos relacionados a menus
 */
@@ -56,13 +62,7 @@ iframe{
 /*
 * Estilos relacionados ao corpo
 */
-.corpo{
-    position: absolute;
-    right: 10%;
-    left: 10%;
-    top: 10px;
-    bottom: 15px;
-}
+
 .fonteCorpo{
     font-family: Arial, Helvetica, sans-serif;
     font-size: medium;

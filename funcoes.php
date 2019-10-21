@@ -12,9 +12,6 @@
                 <div class = \"fonteCorpo\">
                     $textoPostagem
                 </div>
-                <div class = \"fotoCorpo\">
-                    $fotosPostagem
-                </div>
                 <div>
                    <table>
                         <tr>
