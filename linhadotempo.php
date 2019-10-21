@@ -1,10 +1,20 @@
 <link type = "text/css" rel = "stylesheet" href = "estilo.css">
 <?php
     require "funcoes.php";
-    require "configPdo.php";
+    require "configpdo.php";
     $fotoUsuario   = "<img src = \"icones/perfil.png\">";
-    $nomeUsuario   = "Administrador";
-    $textoPostagem = "Temos aqui um exemplo de postagem de texto, trabalharemos com um limite de 255 caracteres e até 8 fotos por post. A data estimada do lançamento oficial dessa plataforma é por volta de dezembro de 2020 ou janeiro de 2021";
     $fotosPostagem = "";
+    $consultaUsuario = $pdo -> prepare("select * from usuario order by codigoUsuario ");
+    $consultaUsuario        -> execute();
+    while ($row = $consultaUsuario -> fetch(PDO::FETCH_ASSOC)){
+        $codigoUsuario = $row['codigoUsuario'];
+        $nomeUsuario   = $row['nomeUsuario'];
+    }
+    $consultaPostagem = $pdo -> prepare("select * from postagem order by codigoPostagem");
+    $consultaPostagem        -> execute();
+    while ($row = $consultaPostagem -> fetch(PDO::FETCH_ASSOC)){
+        $codigoPostagem = $row['codigoPostagem'];
+        $textoPostagem  = $row['textoPostagem'];
+    }
     postagem($fotoUsuario, $nomeUsuario, $textoPostagem, $fotosPostagem);
 ?>
