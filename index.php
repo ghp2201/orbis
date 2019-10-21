@@ -11,17 +11,35 @@
         <title>Orbis</title>
     </head>
     <body>
-        <div class = "menuPerfil">
-            <a href = "meuPerfil.php"><img src = "icones/perfil2.png" class = "fotoPerfilMenu"></a>
+        <div class = "menu-perfil">
+            <a href = "meuPerfil.php"><img src = "icones/perfil2.png" class = "foto-perfil-menu"></a>
         </div>
         <div class = "menu">
-            <a href = "index.php" class = "botoesMenu"><img src = "icones/home.png"/></a></td>
-            <a href = "pesquisar.php" class = "botoesMenu"><img src = "icones/pesquisar2.png"/></a>
-            <a href = "mensagens.php" class = "botoesMenu"><img src = "icones/mensagem2.png"/></a>
-            <a href = "mural.php" class = "botoesMenu"><img src = "icones/mural2.png"></a>
+            <a href = "index.php" class = "botoes-menu"><img src = "icones/home.png"/></a></td>
+            <a href = "pesquisar.php" class = "botoes-menu"><img src = "icones/pesquisar2.png"/></a>
+            <a href = "mensagens.php" class = "botoes-menu"><img src = "icones/mensagem2.png"/></a>
+            <a href = "mural.php" class = "botoes-menu"><img src = "icones/mural2.png"></a>
         </div>
-        <div class = "posicaoIframe">
-            <iframe src = "linhadotempo.php"></iframe>
+        <div class = "corpo">
+            <?php
+                require "funcoes.php";
+                require "configpdo.php";
+                $fotoUsuario   = "<img src = \"icones/perfil.png\">";
+                $fotosPostagem = "";
+                $consultaUsuario = $pdo -> prepare("select * from usuario order by codigoUsuario ");
+                $consultaUsuario        -> execute();
+                while ($row = $consultaUsuario -> fetch(PDO::FETCH_ASSOC)){
+                    $codigoUsuario = $row['codigoUsuario'];
+                    $nomeUsuario   = $row['nomeUsuario'];
+                }
+                $consultaPostagem = $pdo -> prepare("select * from postagem order by codigoPostagem");
+                $consultaPostagem        -> execute();
+                while ($row = $consultaPostagem -> fetch(PDO::FETCH_ASSOC)){
+                    $codigoPostagem = $row['codigoPostagem'];
+                    $textoPostagem  = $row['textoPostagem'];
+                }
+                postagem($fotoUsuario, $nomeUsuario, $textoPostagem, $fotosPostagem);
+            ?>
         </div>
     </body>
 </html>

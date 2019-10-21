@@ -3,20 +3,20 @@
     {
         echo "
             <div class = \"postagem\">
-                <div class = \"fotoUsuario\">
+                <div class = \"foto-usuario\">
                     $fotoUsuario
                 </div>
-                <div class = \"nomeUsuario\">
+                <div class = \"nome-usuario\">
                     $nomeUsuario
                 </div>
-                <div class = \"fonteCorpo\">
+                <div class = \"fonte-corpo\">
                     $textoPostagem
                 </div>
                 <div>
                    <table>
                         <tr>
-                            <td><a href = \"curtir.php\" class = \"fonteBotoesCorpo\"><img src = \"icones/gostei2.png\" class = \"iconeBotoesCorpo\"> Gostei</a></td>
-                            <td><a href=\"compartilhar.php\" class = \"fonteBotoesCorpo\"><img src = \"icones/compartilhar2.png\" class = \"iconeBotoesCorpo\"> Compartilhar</a></td>
+                            <td><a href = \"curtir.php\" class = \"fonte-botoes-corpo\"><img src = \"icones/gostei2.png\" class = \"icone-botoes-corpo\"> Gostei</a></td>
+                            <td><a href=\"compartilhar.php\" class = \"fonte-botoes-corpo\"><img src = \"icones/compartilhar2.png\" class = \"icone-botoes-corpo\"> Compartilhar</a></td>
                         </tr>
                     </table>
                 </div>

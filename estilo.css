@@ -1,6 +1,4 @@
-/*
-* Estilos gerais
-*/
+/* Estilos gerais */
 body{
     background-image: url("/orbis/imagens/papeldeparede.jpg");
     background-size: cover;
@@ -13,26 +11,8 @@ iframe{
     box-shadow: 2px 2px 2px 0.01px #d3d3d3;
     background-color: #ffffff;
 }
-.posicaoIframe{
-    position: absolute;
-    right: 10%;
-    left: 10%;
-    top: 10px;
-    bottom: 15px;
-}
-/*
-* Estilos relacionados a menus
-*/
-.menuPerfil{
-    position: fixed;
-    height: 85px;
-    width: 85px;
-    right: 1.75%;
-    top: 10px;
-    background-color: #ffffff;
-    border-radius: 90px;
-    box-shadow: 2px 2px 2px 0.01px #d3d3d3;
-}
+
+/* Estilos relacionados aos menus */
 .menu{
     position: fixed;
     height: auto;
@@ -46,11 +26,22 @@ iframe{
     padding-bottom: 10px;
     text-align: center;
 }
-.botoesMenu{
+.menu-perfil{
+    position: fixed;
+    height: 85px;
+    width: 85px;
+    right: 1.75%;
+    top: 10px;
+    background-color: #ffffff;
+    border-radius: 90px;
+    box-shadow: 2px 2px 2px 0.01px #d3d3d3;
+}
+
+.botoes-menu{
     width: 48px;
     height: 48px;
 }
-.fotoPerfilMenu{
+.foto-perfil-menu{
     margin-top: 18px;
     margin-bottom: auto;
     margin-left: 18px;;
@@ -59,11 +50,20 @@ iframe{
     text-align: center;
 }
 
-/*
-* Estilos relacionados ao corpo
-*/
-
-.fonteCorpo{
+/* Estilos relacionados ao corpo */
+.corpo{
+    position: absolute;
+    right: 10%;
+    left: 10%;
+    top: 10px;
+    bottom: 15px;
+    width: auto;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px 0.01px #d3d3d3;
+    background-color: #ffffff;
+}
+.fonte-corpo{
     font-family: Arial, Helvetica, sans-serif;
     font-size: medium;
     font-weight: normal;
@@ -76,7 +76,7 @@ iframe{
     margin-left: 20px;
     margin-right: 20px;
 }
-.botoesCorpo{
+.botoes-corpo{
     position: relative;
     margin-top: 5px;
     margin-bottom: 10px;
@@ -85,7 +85,7 @@ iframe{
     width: 24px;
     height: 24px;    
 }
-.fonteBotoesCorpo{
+.fonte-botoes-corpo{
     position: relative;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
@@ -95,14 +95,12 @@ iframe{
     text-decoration: none;
     text-align: left;
 }
-.iconeBotoesCorpo{
+.icone-botoes-corpo{
     width: 24px;
     height: 24px;
 }
 
-/*
-* Estilos relacionados as postagens da linha do tempo
-*/
+/* Estilos relacionados as postagens da linha do tempo */
 .postagem{
     width: auto;
     height: auto;
@@ -119,10 +117,8 @@ iframe{
     background-color: #ffffff;
 }
 
-/*
-* Estilos relacionados aos dados exibidos dos usuarios
-*/
-.nomeUsuario{
+/* Estilos relacionados aos dados exibidos dos usuarios */
+.nome-usuario{
     font-family: Arial, Helvetica, sans-serif;
     font-size: medium;
     font-weight: bold;
@@ -136,7 +132,7 @@ iframe{
     margin-left: 100px;
     margin-right: 10px;
 }
-.fotoUsuario{
+.foto-usuario{
     width: 65px;
     height: 65px;
     position: absolute;
