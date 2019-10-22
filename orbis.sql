@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.0.1
+-- version 4.8.5
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost
--- Tempo de geração: 15/10/2019 às 15:46
--- Versão do servidor: 10.4.6-MariaDB
--- Versão do PHP: 7.3.9
+-- Host: 127.0.0.1
+-- Generation Time: 22-Out-2019 às 02:32
+-- Versão do servidor: 10.1.38-MariaDB
+-- versão do PHP: 7.3.3
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Banco de dados: `orbis`
+-- Database: `orbis`
 --
 CREATE DATABASE IF NOT EXISTS `orbis` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
 USE `orbis`;
@@ -27,19 +27,26 @@ USE `orbis`;
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `postagem`
+-- Estrutura da tabela `postagem`
 --
 
 CREATE TABLE `postagem` (
-  `codigoPost` int(11) NOT NULL,
-  `legendaPost` text DEFAULT NULL,
-  `horaPost` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
+  `codigoPostagem` int(11) NOT NULL,
+  `textoPostagem` text,
+  `horaPostagem` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Extraindo dados da tabela `postagem`
+--
+
+INSERT INTO `postagem` (`codigoPostagem`, `textoPostagem`, `horaPostagem`) VALUES
+(1, 'Temos aqui um exemplo de postagem de texto, trabalharemos com um limite de 255 caracteres e até 8 fotos por post. A data estimada do lançamento oficial dessa plataforma é por volta de dezembro de 2020 ou janeiro de 2021', '2019-10-21 21:28:49');
 
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `usuario`
+-- Estrutura da tabela `usuario`
 --
 
 CREATE TABLE `usuario` (
@@ -51,36 +58,43 @@ CREATE TABLE `usuario` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Índices de tabelas apagadas
+-- Extraindo dados da tabela `usuario`
+--
+
+INSERT INTO `usuario` (`codigoUsuario`, `nomeUsuario`, `sobrenomeUsuario`, `senhaUsuario`, `celularUsuario`) VALUES
+(1, 'admin', 'admin', 'admin', '11111111111');
+
+--
+-- Indexes for dumped tables
 --
 
 --
--- Índices de tabela `postagem`
+-- Indexes for table `postagem`
 --
 ALTER TABLE `postagem`
-  ADD PRIMARY KEY (`codigoPost`);
+  ADD PRIMARY KEY (`codigoPostagem`);
 
 --
--- Índices de tabela `usuario`
+-- Indexes for table `usuario`
 --
 ALTER TABLE `usuario`
   ADD PRIMARY KEY (`codigoUsuario`);
 
 --
--- AUTO_INCREMENT de tabelas apagadas
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT de tabela `postagem`
+-- AUTO_INCREMENT for table `postagem`
 --
 ALTER TABLE `postagem`
-  MODIFY `codigoPost` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `codigoPostagem` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT de tabela `usuario`
+-- AUTO_INCREMENT for table `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `codigoUsuario` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `codigoUsuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
