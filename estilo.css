@@ -28,7 +28,6 @@ body{
     border-radius: 90px;
     box-shadow: 2px 2px 2px 0.01px #d3d3d3;
 }
-
 .botoes-menu{
     width: 48px;
     height: 48px;
@@ -64,18 +63,9 @@ body{
     text-decoration: none;
     text-align: left;
     margin-top: 35px;
-    margin-bottom: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-.botoes-corpo{
-    position: relative;
-    margin-top: 5px;
     margin-bottom: 10px;
     margin-left: 20px;
     margin-right: 20px;
-    width: 24px;
-    height: 24px;    
 }
 .fonte-botoes-corpo{
     position: relative;
@@ -90,6 +80,8 @@ body{
 .icone-botoes-corpo{
     width: 24px;
     height: 24px;
+    margin-left: 20px;
+    margin-right: 5px;
 }
 
 /* Estilos relacionados as postagens da linha do tempo */

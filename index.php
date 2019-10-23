@@ -15,10 +15,11 @@
             <a href = "meuPerfil.php"><img src = "icones/perfil2.png" class = "foto-perfil-menu"></a>
         </div>
         <div class = "menu">
-            <a href = "index.php" class = "botoes-menu"><img src = "icones/home.png"/></a></td>
-            <a href = "pesquisar.php" class = "botoes-menu"><img src = "icones/pesquisar2.png"/></a>
-            <a href = "mensagens.php" class = "botoes-menu"><img src = "icones/mensagem2.png"/></a>
-            <a href = "mural.php" class = "botoesenu"><img src = "icones/mural2.png"></a>
+            <a href = "novaPostagem.php" class = "botoes-menu" id = "novoPost"><img src = "icones/nova2.png"></a>
+            <a href = "index.php" class = "botoes-menu" id = "home"><img src = "icones/home.png"/></a></td>
+            <a href = "pesquisar.php" class = "botoes-menu" id = "pesquisar"><img src = "icones/pesquisar2.png"/></a>
+            <a href = "mensagens.php" class = "botoes-menu" id = "mensagens"><img src = "icones/mensagem2.png"/></a>
+            <a href = "mural.php" class = "botoes-menu" id = "mural"><img src = "icones/mural2.png"></a>
         </div>
         <div class = "corpo">
             <?php
