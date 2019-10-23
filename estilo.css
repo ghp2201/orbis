@@ -1,9 +1,7 @@
-/* Estilos gerais */
 body{
     background-image: url("/orbis/imagens/folhas2.gif");
 }
 
-/* Estilos relacionados aos menus */
 .menu{
     position: fixed;
     height: auto;
@@ -40,7 +38,6 @@ body{
     text-align: center;
 }
 
-/* Estilos relacionados ao corpo */
 .corpo{
     position: absolute;
     right: 10%;
@@ -75,15 +72,17 @@ body{
     text-decoration-line: none;
     text-decoration: none;
     text-align: left;
+    
 }
 .icone-botoes-corpo{
     width: 24px;
     height: 24px;
     margin-left: 20px;
     margin-right: 5px;
+    margin-bottom: 5px;
+    vertical-align: middle;
 }
 
-/* Estilos relacionados as postagens da linha do tempo */
 .postagem{
     width: auto;
     height: auto;
@@ -100,7 +99,6 @@ body{
     background-color: #ffffff;
 }
 
-/* Estilos relacionados aos dados exibidos dos usuarios */
 .nome-usuario{
     font-family: Arial, Helvetica, sans-serif;
     font-size: medium;
